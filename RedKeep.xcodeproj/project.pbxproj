@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C85643913FBB268DF0B37A /* Pods_RedKeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EF30665E317CB9DE58B139 /* Pods_RedKeep.framework */; };
+		619E29CAED35DDEC52EEC61E /* Pods_RedKeepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */; };
+		A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */; };
 		A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B392407F64700F73989 /* AppDelegate.swift */; };
 		A8CD5B3F2407F64700F73989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CD5B3D2407F64700F73989 /* Main.storyboard */; };
 		A8CD5B412407F64B00F73989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CD5B402407F64B00F73989 /* Assets.xcassets */; };
 		A8CD5B442407F64B00F73989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CD5B422407F64B00F73989 /* LaunchScreen.storyboard */; };
 		A8CD5B4F2407F64C00F73989 /* RedKeepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B4E2407F64C00F73989 /* RedKeepTests.swift */; };
 		A8CD5B5A2407F64C00F73989 /* RedKeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B592407F64C00F73989 /* RedKeepUITests.swift */; };
-		A8CD5B6C2408025300F73989 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B6B2408025300F73989 /* AppNavigator.swift */; };
+		A8CD5B6C2408025300F73989 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B6B2408025300F73989 /* Navigator.swift */; };
 		A8CD5B6F2408143800F73989 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B6E2408143800F73989 /* UIViewController.swift */; };
 		A8CD5B71240815EF00F73989 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B70240815EF00F73989 /* AppStoryboard.swift */; };
 		A8CD5B732409463700F73989 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CD5B722409463700F73989 /* Welcome.storyboard */; };
@@ -21,6 +24,7 @@
 		A8CD5B7824094A1500F73989 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B7724094A1500F73989 /* BaseViewController.swift */; };
 		A8CD5B7A24094A3000F73989 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B7924094A3000F73989 /* BaseViewModel.swift */; };
 		A8CD5B7C24094BC600F73989 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B7B24094BC600F73989 /* LoginViewModel.swift */; };
+		B3A55123895249770B9C9931 /* Pods_RedKeep_RedKeepUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172ECCF40C126128981CB407 /* Pods_RedKeep_RedKeepUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172ECCF40C126128981CB407 /* Pods_RedKeep_RedKeepUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedKeep_RedKeepUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EF30665E317CB9DE58B139 /* Pods_RedKeep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedKeep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42161DCDBD568EA3A64C2D8C /* Pods-RedKeep-RedKeepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep-RedKeepUITests.debug.xcconfig"; path = "Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedKeepTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavigator.swift; sourceTree = "<group>"; };
 		A8CD5B362407F64700F73989 /* RedKeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CD5B392407F64700F73989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CD5B3E2407F64700F73989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +62,7 @@
 		A8CD5B552407F64C00F73989 /* RedKeepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedKeepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CD5B592407F64C00F73989 /* RedKeepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedKeepUITests.swift; sourceTree = "<group>"; };
 		A8CD5B5B2407F64C00F73989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8CD5B6B2408025300F73989 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		A8CD5B6B2408025300F73989 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		A8CD5B6E2408143800F73989 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		A8CD5B70240815EF00F73989 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		A8CD5B722409463700F73989 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
@@ -61,6 +70,11 @@
 		A8CD5B7724094A1500F73989 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A8CD5B7924094A3000F73989 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		A8CD5B7B24094BC600F73989 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AB97C0A7D1CEDFC00E5F8A8F /* Pods-RedKeepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeepTests.debug.xcconfig"; path = "Target Support Files/Pods-RedKeepTests/Pods-RedKeepTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7A68058CA9D966158F846C /* Pods-RedKeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep.release.xcconfig"; path = "Target Support Files/Pods-RedKeep/Pods-RedKeep.release.xcconfig"; sourceTree = "<group>"; };
+		C92BDB581921A06D530E07CB /* Pods-RedKeepTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeepTests.release.xcconfig"; path = "Target Support Files/Pods-RedKeepTests/Pods-RedKeepTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0E958B62E01B78762FDEB8F /* Pods-RedKeep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep.debug.xcconfig"; path = "Target Support Files/Pods-RedKeep/Pods-RedKeep.debug.xcconfig"; sourceTree = "<group>"; };
+		F43604B2707DEAE6A804FDBE /* Pods-RedKeep-RedKeepUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep-RedKeepUITests.release.xcconfig"; path = "Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C85643913FBB268DF0B37A /* Pods_RedKeep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619E29CAED35DDEC52EEC61E /* Pods_RedKeepTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A55123895249770B9C9931 /* Pods_RedKeep_RedKeepUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		348633C10D1DBE158A106BC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0E958B62E01B78762FDEB8F /* Pods-RedKeep.debug.xcconfig */,
+				BD7A68058CA9D966158F846C /* Pods-RedKeep.release.xcconfig */,
+				42161DCDBD568EA3A64C2D8C /* Pods-RedKeep-RedKeepUITests.debug.xcconfig */,
+				F43604B2707DEAE6A804FDBE /* Pods-RedKeep-RedKeepUITests.release.xcconfig */,
+				AB97C0A7D1CEDFC00E5F8A8F /* Pods-RedKeepTests.debug.xcconfig */,
+				C92BDB581921A06D530E07CB /* Pods-RedKeepTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		838240BA3667ABC858519BF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23EF30665E317CB9DE58B139 /* Pods_RedKeep.framework */,
+				172ECCF40C126128981CB407 /* Pods_RedKeep_RedKeepUITests.framework */,
+				4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8CD5B2D2407F64700F73989 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +135,8 @@
 				A8CD5B4D2407F64C00F73989 /* RedKeepTests */,
 				A8CD5B582407F64C00F73989 /* RedKeepUITests */,
 				A8CD5B372407F64700F73989 /* Products */,
+				348633C10D1DBE158A106BC6 /* Pods */,
+				838240BA3667ABC858519BF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,7 +210,7 @@
 		A8CD5B6A2408021500F73989 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				A8CD5B6B2408025300F73989 /* AppNavigator.swift */,
+				A8CD5B6B2408025300F73989 /* Navigator.swift */,
 				A8CD5B70240815EF00F73989 /* AppStoryboard.swift */,
 				A8CD5B7724094A1500F73989 /* BaseViewController.swift */,
 				A8CD5B7924094A3000F73989 /* BaseViewModel.swift */,
@@ -190,6 +232,7 @@
 				A8CD5B722409463700F73989 /* Welcome.storyboard */,
 				A8CD5B75240949E200F73989 /* LoginViewController.swift */,
 				A8CD5B7B24094BC600F73989 /* LoginViewModel.swift */,
+				A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -201,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8CD5B5E2407F64C00F73989 /* Build configuration list for PBXNativeTarget "RedKeep" */;
 			buildPhases = (
+				92BF4544CFE8BA59560D08DC /* [CP] Check Pods Manifest.lock */,
 				A8CD5B322407F64700F73989 /* Sources */,
 				A8CD5B332407F64700F73989 /* Frameworks */,
 				A8CD5B342407F64700F73989 /* Resources */,
+				7EBED0F0EB16D3F09CCC752F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8CD5B612407F64C00F73989 /* Build configuration list for PBXNativeTarget "RedKeepTests" */;
 			buildPhases = (
+				02072EF2CDA5D72FCF4D19FD /* [CP] Check Pods Manifest.lock */,
 				A8CD5B462407F64C00F73989 /* Sources */,
 				A8CD5B472407F64C00F73989 /* Frameworks */,
 				A8CD5B482407F64C00F73989 /* Resources */,
@@ -236,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8CD5B642407F64C00F73989 /* Build configuration list for PBXNativeTarget "RedKeepUITests" */;
 			buildPhases = (
+				5AB992E5CE756F2A7F632D23 /* [CP] Check Pods Manifest.lock */,
 				A8CD5B512407F64C00F73989 /* Sources */,
 				A8CD5B522407F64C00F73989 /* Frameworks */,
 				A8CD5B532407F64C00F73989 /* Resources */,
+				8FC73E61ACF5A55978005874 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +369,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02072EF2CDA5D72FCF4D19FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedKeepTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB992E5CE756F2A7F632D23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedKeep-RedKeepUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EBED0F0EB16D3F09CCC752F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedKeep/Pods-RedKeep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedKeep/Pods-RedKeep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedKeep/Pods-RedKeep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FC73E61ACF5A55978005874 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BF4544CFE8BA59560D08DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedKeep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8CD5B322407F64700F73989 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,10 +480,11 @@
 				A8CD5B76240949E200F73989 /* LoginViewController.swift in Sources */,
 				A8CD5B71240815EF00F73989 /* AppStoryboard.swift in Sources */,
 				A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */,
+				A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */,
 				A8CD5B6F2408143800F73989 /* UIViewController.swift in Sources */,
 				A8CD5B7A24094A3000F73989 /* BaseViewModel.swift in Sources */,
 				A8CD5B7824094A1500F73989 /* BaseViewController.swift in Sources */,
-				A8CD5B6C2408025300F73989 /* AppNavigator.swift in Sources */,
+				A8CD5B6C2408025300F73989 /* Navigator.swift in Sources */,
 				A8CD5B7C24094BC600F73989 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +658,7 @@
 		};
 		A8CD5B5F2407F64C00F73989 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E958B62E01B78762FDEB8F /* Pods-RedKeep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +677,7 @@
 		};
 		A8CD5B602407F64C00F73989 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7A68058CA9D966158F846C /* Pods-RedKeep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +696,7 @@
 		};
 		A8CD5B622407F64C00F73989 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB97C0A7D1CEDFC00E5F8A8F /* Pods-RedKeepTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +717,7 @@
 		};
 		A8CD5B632407F64C00F73989 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92BDB581921A06D530E07CB /* Pods-RedKeepTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +738,7 @@
 		};
 		A8CD5B652407F64C00F73989 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42161DCDBD568EA3A64C2D8C /* Pods-RedKeep-RedKeepUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +758,7 @@
 		};
 		A8CD5B662407F64C00F73989 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43604B2707DEAE6A804FDBE /* Pods-RedKeep-RedKeepUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

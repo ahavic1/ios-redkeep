@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import ReactiveKit
 
-class BaseViewController<ViewModelType: BaseViewModel>: UIViewController {
+class BaseViewController<ViewModelType: BaseViewModel, NavigatorType: Navigator>: UIViewController {
+
+    lazy private var navigator: Navigator = {
+        return NavigatorType(navigationController: self.navigationController)
+    }()
 
     var viewModel: ViewModelType!
 
@@ -28,17 +33,9 @@ class BaseViewController<ViewModelType: BaseViewModel>: UIViewController {
     }
 
     open func bindViewModel() {
-
+        viewModel.navigationEvent.observeNext { [weak self] destination in
+            guard let self = self, let destination = destination else { return }
+            self.navigator.navigate(to: destination)
+        }.dispose(in: bag)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

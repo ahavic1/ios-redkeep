@@ -7,18 +7,15 @@
 //
 
 import Foundation
+import ReactiveKit
 
 class BaseViewModel {
 
-    func viewDidLoad() {
+    let navigationEvent = Property<Destination?>(nil)
 
-    }
+    func viewDidLoad() {}
 
-    func viewWillAppear() {
+    func viewWillAppear() {}
 
-    }
-
-    func viewWillDisappear() {
-
-    }
+    func viewWillDisappear() {}
 }

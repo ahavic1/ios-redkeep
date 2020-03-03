@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController<LoginViewModel> {
+class LoginViewController: BaseViewController<LoginViewModel, WelcomeNavigator> {
     
     override func bindViewModel() {
 
