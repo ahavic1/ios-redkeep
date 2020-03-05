@@ -23,13 +23,15 @@ class WelcomeNavigator: Navigator {
 
     func navigate(to destination: Destination) {
         let vc = createViewContoller(for: destination as! WelcomeDestination)
-        print(type(of: vc))
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     private func createViewContoller(for destination: WelcomeDestination) -> UIViewController {
         switch destination {
         case .login:
-            return UIViewController()
+            let loginvc = LoginViewController.instantiateFromStoryboard(appStoryboard: .welcome)
+            loginvc.viewModel = LoginViewModel()
+            return loginvc
         case .registration:
             return UIViewController()
         case .homescreen:

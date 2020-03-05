@@ -13,13 +13,59 @@
         <!--Login View Controller-->
         <scene sceneID="fUT-B5-CoZ">
             <objects>
-                <viewController id="Mga-AU-GON" customClass="LoginViewController" customModule="RedKeep" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Mga-AU-GON" customClass="LoginViewController" customModule="RedKeep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nPw-Yv-4UO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syU-SM-KZk">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YxE-TI-v3X">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgF-rf-PLi">
+                                        <rect key="frame" x="0.0" y="96" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-2j-bzx">
+                                        <rect key="frame" x="0.0" y="176" width="374" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3gV-2j-bzx" secondAttribute="trailing" id="7mE-qU-0z8"/>
+                                    <constraint firstAttribute="trailing" secondItem="YxE-TI-v3X" secondAttribute="trailing" id="FQB-sk-zyn"/>
+                                    <constraint firstItem="lgF-rf-PLi" firstAttribute="top" secondItem="YxE-TI-v3X" secondAttribute="bottom" constant="16" id="J6X-c1-Wd4"/>
+                                    <constraint firstItem="YxE-TI-v3X" firstAttribute="leading" secondItem="syU-SM-KZk" secondAttribute="leading" id="Srm-0b-V4x"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgF-rf-PLi" secondAttribute="trailing" id="aAt-dz-GJr"/>
+                                    <constraint firstItem="3gV-2j-bzx" firstAttribute="leading" secondItem="syU-SM-KZk" secondAttribute="leading" id="aF4-N4-PWX"/>
+                                    <constraint firstItem="lgF-rf-PLi" firstAttribute="leading" secondItem="syU-SM-KZk" secondAttribute="leading" id="h3D-66-pM6"/>
+                                    <constraint firstItem="YxE-TI-v3X" firstAttribute="top" secondItem="syU-SM-KZk" secondAttribute="top" constant="50" id="pcd-Sy-N3u"/>
+                                    <constraint firstItem="3gV-2j-bzx" firstAttribute="bottom" secondItem="lgF-rf-PLi" secondAttribute="bottom" constant="80" id="tqF-fo-zsB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k6Q-bR-I2r" firstAttribute="bottom" secondItem="syU-SM-KZk" secondAttribute="bottom" id="5es-6w-XKm"/>
+                            <constraint firstAttribute="trailing" secondItem="syU-SM-KZk" secondAttribute="trailing" constant="20" symbolic="YES" id="6OT-XI-PvL"/>
+                            <constraint firstItem="syU-SM-KZk" firstAttribute="leading" secondItem="nPw-Yv-4UO" secondAttribute="leading" constant="20" symbolic="YES" id="8av-5f-FIR"/>
+                            <constraint firstItem="syU-SM-KZk" firstAttribute="top" secondItem="k6Q-bR-I2r" secondAttribute="top" id="Kfi-1w-Ce5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k6Q-bR-I2r"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="3gV-2j-bzx" id="Of7-2O-bVd"/>
+                        <outlet property="passwordText" destination="lgF-rf-PLi" id="8SZ-QT-xAN"/>
+                        <outlet property="usernameText" destination="YxE-TI-v3X" id="H7t-fG-Q0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiE-mw-ft5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

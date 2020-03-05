@@ -10,7 +10,11 @@ import UIKit
 
 class LoginViewController: BaseViewController<LoginViewModel, WelcomeNavigator> {
     
-    override func bindViewModel() {
+    @IBOutlet weak var usernameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
+    override func bindViewModel() {
+        
     }
 }

@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var appNavigator: AppNavigator!
+    var navigator: Navigator!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         // init app navigator and navigate to initial screen
-        appNavigator = AppNavigator(navigationController: navigationController)
-        appNavigator.goToSplash()
+        navigator = WelcomeNavigator(navigationController: navigationController)
+        navigator.navigate(to: WelcomeDestination.login)
         return true
     }
 

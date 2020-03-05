@@ -10,6 +10,8 @@
 		49C85643913FBB268DF0B37A /* Pods_RedKeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EF30665E317CB9DE58B139 /* Pods_RedKeep.framework */; };
 		619E29CAED35DDEC52EEC61E /* Pods_RedKeepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */; };
 		A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */; };
+		A8A104ED24111FB3003697E0 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A104EC24111FB2003697E0 /* LoginRepository.swift */; };
+		A8A104F024114733003697E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A104EF24114733003697E0 /* User.swift */; };
 		A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B392407F64700F73989 /* AppDelegate.swift */; };
 		A8CD5B3F2407F64700F73989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CD5B3D2407F64700F73989 /* Main.storyboard */; };
 		A8CD5B412407F64B00F73989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CD5B402407F64B00F73989 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		42161DCDBD568EA3A64C2D8C /* Pods-RedKeep-RedKeepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep-RedKeepUITests.debug.xcconfig"; path = "Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedKeepTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavigator.swift; sourceTree = "<group>"; };
+		A8A104EC24111FB2003697E0 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		A8A104EF24114733003697E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8CD5B362407F64700F73989 /* RedKeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CD5B392407F64700F73989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8CD5B3E2407F64700F73989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A8A104EE24114723003697E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8A104EF24114733003697E0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A8CD5B2D2407F64700F73989 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +196,8 @@
 		A8CD5B672408009100F73989 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A8A104EE24114723003697E0 /* Models */,
+				A8A104EC24111FB2003697E0 /* LoginRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -482,10 +496,12 @@
 				A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */,
 				A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */,
 				A8CD5B6F2408143800F73989 /* UIViewController.swift in Sources */,
+				A8A104ED24111FB3003697E0 /* LoginRepository.swift in Sources */,
 				A8CD5B7A24094A3000F73989 /* BaseViewModel.swift in Sources */,
 				A8CD5B7824094A1500F73989 /* BaseViewController.swift in Sources */,
 				A8CD5B6C2408025300F73989 /* Navigator.swift in Sources */,
 				A8CD5B7C24094BC600F73989 /* LoginViewModel.swift in Sources */,
+				A8A104F024114733003697E0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
