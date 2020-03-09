@@ -5,6 +5,9 @@ target 'RedKeep' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'ReactiveKit'
+  pod 'Bond'
+  pod 'JVFloatLabeledTextField'
+  pod 'SwiftLint'
   # Pods for RedKeep
 
   target 'RedKeepTests' do

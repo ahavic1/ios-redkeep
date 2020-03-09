@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  RedKeep
+
+  Created by Ademir Havic on 09/03/2020.
+  Copyright © 2020 Ademir Havic. All rights reserved.
+*/
+// - MARK: Login
+"login_username" = "Username";
+"login_password" = "Password";
+"login_button" = "Login";
+"login_register" = "New to RedKeep?";

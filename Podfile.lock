@@ -1,16 +1,33 @@
 PODS:
+  - Bond (7.6.6):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.4)
+  - JVFloatLabeledTextField (1.2.2)
   - ReactiveKit (3.16.2)
+  - SwiftLint (0.39.1)
 
 DEPENDENCIES:
+  - Bond
+  - JVFloatLabeledTextField
   - ReactiveKit
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - Bond
+    - Differ
+    - JVFloatLabeledTextField
     - ReactiveKit
+    - SwiftLint
 
 SPEC CHECKSUMS:
+  Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
+  Differ: 5cd747e2f29c11ea9605eba7cb369df17e2b1ee2
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   ReactiveKit: c46f8358afe351a9a148c9462ca2d0f5f7b17ca7
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 87eddb7c56de7b2a2bb40effbc288f737835c2a1
+PODFILE CHECKSUM: fd3edbabc47cdc2d04dde30a6f80056dcfdc1979
 
 COCOAPODS: 1.8.4

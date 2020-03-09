@@ -11,6 +11,8 @@ import ReactiveKit
 
 class BaseViewModel {
 
+    let bag = DisposeBag()
+
     let navigationEvent = Property<Destination?>(nil)
 
     func viewDidLoad() {}

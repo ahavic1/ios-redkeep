@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias LoginCallback = (Result<Any, Error>) -> Void
+typealias LoginCallback = (Any?, Error?) -> Void
 
 protocol LoginRepository {
     func login(with username: String, password: String, callback: @escaping LoginCallback)
