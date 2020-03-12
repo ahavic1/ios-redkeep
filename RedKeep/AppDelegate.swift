@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        initAppCenter()
         let navigationController = UINavigationController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
@@ -58,5 +62,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate.
         // Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+}
+
+private extension AppDelegate {
+    func initAppCenter() {
+        MSAppCenter.start(AppConfiguration.appCenterId, withServices: [ MSAnalytics.self, MSCrashes.self ])
     }
 }

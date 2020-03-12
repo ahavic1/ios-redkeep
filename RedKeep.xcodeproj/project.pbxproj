@@ -20,6 +20,7 @@
 		A85EB06A2416967C008A0022 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB0692416967C008A0022 /* UILabel.swift */; };
 		A85EB06E2418E70E008A0022 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB06D2418E70E008A0022 /* Style.swift */; };
 		A86641BF24191FB200A6A248 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86641BE24191FB200A6A248 /* AppStyle.swift */; };
+		A86641C3241A7DD500A6A248 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86641C2241A7DD500A6A248 /* AppConfiguration.swift */; };
 		A8A104ED24111FB3003697E0 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A104EC24111FB2003697E0 /* LoginRepository.swift */; };
 		A8A104F024114733003697E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A104EF24114733003697E0 /* User.swift */; };
 		A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B392407F64700F73989 /* AppDelegate.swift */; };
@@ -72,6 +73,7 @@
 		A85EB0692416967C008A0022 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		A85EB06D2418E70E008A0022 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		A86641BE24191FB200A6A248 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		A86641C2241A7DD500A6A248 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		A8A104EC24111FB2003697E0 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		A8A104EF24114733003697E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8CD5B362407F64700F73989 /* RedKeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 				A8CD5B68240801D500F73989 /* UI */,
 				A8CD5B672408009100F73989 /* Data */,
 				A8CD5B392407F64700F73989 /* AppDelegate.swift */,
+				A86641C2241A7DD500A6A248 /* AppConfiguration.swift */,
 				A8CD5B402407F64B00F73989 /* Assets.xcassets */,
 				A8CD5B452407F64B00F73989 /* Info.plist */,
 				A85EB06324168FD8008A0022 /* Localizable.strings */,
@@ -243,11 +246,11 @@
 		A8CD5B68240801D500F73989 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A8CD5B6A2408021500F73989 /* Base */,
 				A85EB06C2418E6EA008A0022 /* Styles */,
+				A8CD5B6D2408141600F73989 /* Extensions */,
 				A85EB05A24129574008A0022 /* Components */,
 				A8CD5B74240948FA00F73989 /* Welcome */,
-				A8CD5B6D2408141600F73989 /* Extensions */,
-				A8CD5B6A2408021500F73989 /* Base */,
 				A8CD5B3D2407F64700F73989 /* Main.storyboard */,
 				A8CD5B422407F64B00F73989 /* LaunchScreen.storyboard */,
 			);
@@ -550,6 +553,7 @@
 				A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */,
 				A8CD5B6F2408143800F73989 /* UIViewController.swift in Sources */,
 				A86641BF24191FB200A6A248 /* AppStyle.swift in Sources */,
+				A86641C3241A7DD500A6A248 /* AppConfiguration.swift in Sources */,
 				A8A104ED24111FB3003697E0 /* LoginRepository.swift in Sources */,
 				A85EB06224168480008A0022 /* Dimension.swift in Sources */,
 				A85EB05C2412958C008A0022 /* CustomTextField.swift in Sources */,

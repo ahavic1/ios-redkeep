@@ -8,6 +8,8 @@ target 'RedKeep' do
   pod 'Bond'
   pod 'JVFloatLabeledTextField'
   pod 'SwiftLint'
+  pod 'AppCenter'
+  
   # Pods for RedKeep
 
   target 'RedKeepTests' do
