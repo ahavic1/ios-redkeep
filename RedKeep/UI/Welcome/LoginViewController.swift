@@ -14,9 +14,7 @@ class LoginViewController: BaseViewController<LoginViewModel, WelcomeNavigator> 
 
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
-    @IBOutlet weak var loginButton: UIButton! {
-        didSet { loginButton.setStyle(AppStyles.shared.primaryButton) }
-    }
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerLabel: UILabel!
 
     override func viewDidLoad() {

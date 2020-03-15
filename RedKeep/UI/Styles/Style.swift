@@ -13,7 +13,6 @@ protocol Styleable {
 }
 
 struct Style {
-    var isHidden: Bool?
     var font: UIFont?
     var color: UIColor?
     var titleColorNormal: UIColor?
@@ -40,7 +39,6 @@ struct Style {
     var shadowRadius: CGFloat?
 
     init(
-        isHidden: Bool? = nil,
         font: UIFont? = nil,
         color: UIColor? = nil,
         titleColorNormal: UIColor? = nil,
@@ -66,7 +64,6 @@ struct Style {
         shadowOffset: CGSize? = nil,
         shadowRadius: CGFloat? = nil
     ) {
-        self.isHidden = isHidden
         self.font = font
         self.color = color
         self.titleColorNormal = titleColorNormal

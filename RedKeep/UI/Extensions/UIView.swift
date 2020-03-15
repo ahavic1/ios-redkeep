@@ -9,6 +9,15 @@
 import UIKit
 
 extension UIView: Styleable {
+    @IBInspectable var style: String? {
+        get { return nil }
+        set {
+            if let resolvedStyle = AppStyles.shared.resolveStyle(from: newValue) {
+                self.setStyle(resolvedStyle)
+            }
+        }
+    }
+
     open override func awakeFromNib() {
         super.awakeFromNib()
         localize()
@@ -21,21 +30,17 @@ extension UIView: Styleable {
 }
 
 private extension UIView {
-    //swiftlint:disable force_cast
     func localize() {
         switch self {
-        case is UILabel:
-            let label = (self as! UILabel)
+        case let label as UILabel:
             if let text = label.text {
                 label.text = text.localized
             }
-        case is UIButton:
-            let button = (self as! UIButton)
+        case let button as UIButton:
             if let text = button.titleLabel?.text {
                 button.setTitle(text.localized, for: .normal)
             }
-        case is UITextField:
-            let textField = (self as! UITextField)
+        case let textField as UITextField:
             if let placeholder = textField.placeholder {
                 textField.placeholder = placeholder.localized
             }
@@ -45,19 +50,18 @@ private extension UIView {
     }
 
     func setCommonProperties(_ style: Style) {
-        if let isHidden = style.isHidden { self.isHidden = isHidden }
         if let alpha = style.alpha { self.alpha = alpha }
         if let tintColor = style.tintColor { self.tintColor = tintColor }
     }
 
     func setViewSpecificProperties(_ style: Style) {
         switch self {
-        case is UIButton:
-            setProperties(for: self as! UIButton, style: style)
-        case is UILabel:
-            setProperties(for: self as! UILabel, style: style)
-        case is UITextField:
-            setProperties(for: self as! UITextField, style: style)
+        case let button as UIButton:
+            setProperties(for: button, style: style)
+        case let label as UILabel:
+            setProperties(for: label, style: style)
+        case let textField as UITextField:
+            setProperties(for: textField, style: style)
         default:
             break
         }

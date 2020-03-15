@@ -75,6 +75,9 @@
                                             <constraint firstAttribute="height" constant="40" id="dqt-Vy-CHb"/>
                                         </constraints>
                                         <state key="normal" title="login_button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="style" value="primaryButton"/>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="login_register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-es-yjd">
                                         <rect key="frame" x="16" y="480" width="342" height="21"/>
