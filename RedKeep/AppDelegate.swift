@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         // init app navigator and navigate to initial screen
-        navigator = WelcomeNavigator(navigationController: navigationController)
-        navigator.navigate(to: WelcomeDestination.login)
+        navigator = LaunchNavigator(navigationController: navigationController)
+        navigator.navigate(to: LaunchDestination.launch)
         return true
     }
 

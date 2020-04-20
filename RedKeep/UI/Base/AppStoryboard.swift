@@ -9,6 +9,7 @@
 import UIKit
 
 enum AppStoryboard: String {
+    case launch = "Launch"
     case welcome = "Welcome"
 
     private var instance: UIStoryboard {
@@ -17,6 +18,7 @@ enum AppStoryboard: String {
 
     func viewController<T: UIViewController>(viewControllerClass: T.Type) -> T {
         let storyboardId = (viewControllerClass as UIViewController.Type).storyboardID
+        //swiftlint:disable:next force_cast
         return instance.instantiateViewController(withIdentifier: storyboardId) as! T
     }
 

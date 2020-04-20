@@ -17,6 +17,7 @@ class BaseViewController<ViewModelType: BaseViewModel, NavigatorType: Navigator>
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavigationBar()
         bindViewModel()
         viewModel.viewDidLoad()
     }
@@ -37,7 +38,10 @@ class BaseViewController<ViewModelType: BaseViewModel, NavigatorType: Navigator>
             self.navigator.navigate(to: destination)
         }.dispose(in: bag)
     }
+}
 
+// MARK: ViewController Navigation
+extension BaseViewController {
     func hideNavigationBar() {
         navigationController?.navigationBar.isHidden = true
     }

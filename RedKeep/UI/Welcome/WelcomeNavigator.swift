@@ -9,29 +9,19 @@
 import UIKit
 
 enum WelcomeDestination: Destination {
-    case login
     case registration
     case homescreen
 }
 
-class WelcomeNavigator: Navigator {
-    weak var navigationController: UINavigationController?
-
-    required init(navigationController: UINavigationController?) {
-        self.navigationController = navigationController
-    }
-
-    func navigate(to destination: Destination) {
-        let vc = createViewContoller(for: destination as! WelcomeDestination)
-        navigationController?.pushViewController(vc, animated: true)
+class WelcomeNavigator: AppNavigator {
+    override func navigate(to destination: Destination) {
+        //swiftlint:disable:next force_cast
+        let viewController = createViewContoller(for: destination as! WelcomeDestination)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     private func createViewContoller(for destination: WelcomeDestination) -> UIViewController {
         switch destination {
-        case .login:
-            let loginvc = LoginViewController.instantiateFromStoryboard(appStoryboard: .welcome)
-            loginvc.viewModel = LoginViewModel()
-            return loginvc
         case .registration:
             return UIViewController()
         case .homescreen:

@@ -20,4 +20,8 @@ class BaseViewModel {
     func viewWillAppear() {}
 
     func viewWillDisappear() {}
+
+    func navigate(to destination: Destination) {
+        navigationEvent.value = destination
+    }
 }

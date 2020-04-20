@@ -33,7 +33,7 @@ class LoginViewModel: BaseViewModel {
     }
 
     func register() {
-        navigationEvent.value = WelcomeDestination.login
+        navigationEvent.value = LaunchDestination.login
         // navigate to registration
     }
 }
