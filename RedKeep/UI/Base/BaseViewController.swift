@@ -11,9 +11,7 @@ import ReactiveKit
 
 class BaseViewController<ViewModelType: BaseViewModel, NavigatorType: Navigator>: UIViewController {
 
-    lazy private var navigator: Navigator = {
-        return NavigatorType(navigationController: self.navigationController)
-    }()
+    lazy private var navigator: Navigator = NavigatorType(navigationController: self.navigationController)
 
     var viewModel: ViewModelType!
 
