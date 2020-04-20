@@ -11,28 +11,21 @@ import ReactiveKit
 import Bond
 
 class LoginViewController: BaseViewController<LoginViewModel, WelcomeNavigator> {
-
-    @IBOutlet weak var usernameText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var usernameTextField: PrimaryTextField!
+    @IBOutlet weak var passwordTextField: PrimaryTextField!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var registerLabel: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        hideNavigationBar()
-    }
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var linkButtonBottomConstraint: NSLayoutConstraint!
 
     override func bindViewModel() {
-        viewModel.username.bidirectionalBind(to: usernameText.reactive.text)
-        viewModel.password.bidirectionalBind(to: passwordText.reactive.text)
-        viewModel.loginButtonIsEnabled.bind(to: loginButton.reactive.isEnabled)
+        super.bindViewModel()
+    }
 
-        loginButton.reactive.tap.observeNext { [weak self] in
-            self?.viewModel.signIn()
-        }.dispose(in: bag)
-
-        registerLabel.reactive.tapGesture().observeNext { [weak self] _ in
-            self?.viewModel.register()
-        }.dispose(in: bag)
+    override func keyboardHandler(_ notification: Notification) {
+        let keyboardHeight = KeyboardHelper.getKeyboardHeight(from: notification, relativeTo: self.view)
+        UIView.animate(withDuration: 0.5) {
+            self.linkButtonBottomConstraint.constant = keyboardHeight
+            self.view.layoutIfNeeded()
+        }
     }
 }

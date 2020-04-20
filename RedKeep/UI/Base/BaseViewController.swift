@@ -25,6 +25,7 @@ class BaseViewController<ViewModelType: BaseViewModel, NavigatorType: Navigator>
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.viewWillAppear()
+        setKeyboardObserver()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -38,11 +39,39 @@ class BaseViewController<ViewModelType: BaseViewModel, NavigatorType: Navigator>
             self.navigator.navigate(to: destination)
         }.dispose(in: bag)
     }
+
+    open func keyboardHandler(_ notification: Notification) {}
+
+    final func adjustForKeyboard(notification: Notification, scrollView: UIScrollView) {
+        let userInfo = notification.userInfo
+         // swiftlint:disable:next force_cast
+        let keyboardFrame = (userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        let keyboardHeight = self.view.convert(keyboardFrame, to: nil).size.height
+
+        var contentInsets = scrollView.contentInset
+        contentInsets.bottom = keyboardHeight
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
 }
 
 // MARK: ViewController Navigation
 extension BaseViewController {
     func hideNavigationBar() {
         navigationController?.navigationBar.isHidden = true
+    }
+}
+
+// MARK: Private methods
+private extension BaseViewController {
+    private func setKeyboardObserver() {
+        merge(
+            NotificationCenter.default.reactive.notification(name: UIResponder.keyboardWillHideNotification),
+            NotificationCenter.default.reactive.notification(name: UIResponder.keyboardWillShowNotification)
+        )
+            .receive(on: DispatchQueue.main)
+            .observeNext { [weak self] notification in
+                self?.keyboardHandler(notification)
+            }.dispose(in: bag)
     }
 }

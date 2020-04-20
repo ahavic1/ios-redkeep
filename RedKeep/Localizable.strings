@@ -1,11 +1,7 @@
-/* 
-  Localizable.strings
-  RedKeep
-
-  Created by Ademir Havic on 09/03/2020.
-  Copyright © 2020 Ademir Havic. All rights reserved.
-*/
 // - MARK: Login
+"login_title_label" = "Welcome,";
+"login_subtitle_label_1" = "please sign in to continue";
+"login_subtitle_label_2" = "please enter password to continue";
 "login_username" = "Username";
 "login_password" = "Password";
 "login_button" = "Login";

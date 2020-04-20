@@ -9,7 +9,7 @@
 import UIKit
 
 enum AppStoryboard: String {
-    case launch = "Launch"
+    case splash = "LaunchScreen"
     case welcome = "Welcome"
 
     private var instance: UIStoryboard {

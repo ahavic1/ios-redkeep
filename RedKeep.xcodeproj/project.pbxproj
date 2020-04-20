@@ -10,7 +10,7 @@
 		49C85643913FBB268DF0B37A /* Pods_RedKeep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EF30665E317CB9DE58B139 /* Pods_RedKeep.framework */; };
 		619E29CAED35DDEC52EEC61E /* Pods_RedKeepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */; };
 		A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */; };
-		A85EB05C2412958C008A0022 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB05B2412958C008A0022 /* CustomTextField.swift */; };
+		A85EB05C2412958C008A0022 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB05B2412958C008A0022 /* PrimaryTextField.swift */; };
 		A85EB05E24165EFD008A0022 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB05D24165EFD008A0022 /* String.swift */; };
 		A85EB06024167128008A0022 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB05F24167128008A0022 /* UIColor.swift */; };
 		A85EB06224168480008A0022 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85EB06124168480008A0022 /* Dimension.swift */; };
@@ -25,8 +25,8 @@
 		A89AC2FE244D9F8F00DF37B1 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89AC2FD244D9F8F00DF37B1 /* LaunchViewModel.swift */; };
 		A89AC300244D9FC100DF37B1 /* LaunchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89AC2FF244D9FC100DF37B1 /* LaunchNavigator.swift */; };
 		A89AC302244DB8CE00DF37B1 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89AC301244DB8CE00DF37B1 /* DispatchQueue.swift */; };
-		A89AC304244DBD6700DF37B1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89AC303244DBD6700DF37B1 /* UIImage.swift */; };
-		A89AC306244DCE6D00DF37B1 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89AC305244DCE6D00DF37B1 /* Launch.storyboard */; };
+		A89AC304244DBD6700DF37B1 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89AC303244DBD6700DF37B1 /* UIImageView.swift */; };
+		A89AC306244DCE6D00DF37B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89AC305244DCE6D00DF37B1 /* LaunchScreen.storyboard */; };
 		A8A104ED24111FB3003697E0 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A104EC24111FB2003697E0 /* LoginRepository.swift */; };
 		A8A104F024114733003697E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A104EF24114733003697E0 /* User.swift */; };
 		A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B392407F64700F73989 /* AppDelegate.swift */; };
@@ -42,6 +42,8 @@
 		A8CD5B7824094A1500F73989 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B7724094A1500F73989 /* BaseViewController.swift */; };
 		A8CD5B7A24094A3000F73989 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B7924094A3000F73989 /* BaseViewModel.swift */; };
 		A8CD5B7C24094BC600F73989 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD5B7B24094BC600F73989 /* LoginViewModel.swift */; };
+		A8DD963B2464558C00BF67EA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD963A2464558C00BF67EA /* UIImage.swift */; };
+		A8DD963D2464831200BF67EA /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD963C2464831200BF67EA /* KeyboardHelper.swift */; };
 		B3A55123895249770B9C9931 /* Pods_RedKeep_RedKeepUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172ECCF40C126128981CB407 /* Pods_RedKeep_RedKeepUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +70,7 @@
 		42161DCDBD568EA3A64C2D8C /* Pods-RedKeep-RedKeepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep-RedKeepUITests.debug.xcconfig"; path = "Target Support Files/Pods-RedKeep-RedKeepUITests/Pods-RedKeep-RedKeepUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A77ADFBB935D3AC930182FE /* Pods_RedKeepTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedKeepTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80549D0240EA7B200B25C42 /* WelcomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavigator.swift; sourceTree = "<group>"; };
-		A85EB05B2412958C008A0022 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A85EB05B2412958C008A0022 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		A85EB05D24165EFD008A0022 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A85EB05F24167128008A0022 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A85EB06124168480008A0022 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = ../Extensions/Dimension.swift; sourceTree = "<group>"; };
@@ -83,8 +85,8 @@
 		A89AC2FD244D9F8F00DF37B1 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		A89AC2FF244D9FC100DF37B1 /* LaunchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNavigator.swift; sourceTree = "<group>"; };
 		A89AC301244DB8CE00DF37B1 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
-		A89AC303244DBD6700DF37B1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		A89AC305244DCE6D00DF37B1 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		A89AC303244DBD6700DF37B1 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		A89AC305244DCE6D00DF37B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8A104EC24111FB2003697E0 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		A8A104EF24114733003697E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8CD5B362407F64700F73989 /* RedKeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKeep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,8 @@
 		A8CD5B7724094A1500F73989 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A8CD5B7924094A3000F73989 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		A8CD5B7B24094BC600F73989 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A8DD963A2464558C00BF67EA /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		A8DD963C2464831200BF67EA /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
 		AB97C0A7D1CEDFC00E5F8A8F /* Pods-RedKeepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeepTests.debug.xcconfig"; path = "Target Support Files/Pods-RedKeepTests/Pods-RedKeepTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD7A68058CA9D966158F846C /* Pods-RedKeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeep.release.xcconfig"; path = "Target Support Files/Pods-RedKeep/Pods-RedKeep.release.xcconfig"; sourceTree = "<group>"; };
 		C92BDB581921A06D530E07CB /* Pods-RedKeepTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKeepTests.release.xcconfig"; path = "Target Support Files/Pods-RedKeepTests/Pods-RedKeepTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +171,7 @@
 		A85EB05A24129574008A0022 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A85EB05B2412958C008A0022 /* CustomTextField.swift */,
+				A85EB05B2412958C008A0022 /* PrimaryTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,7 +191,7 @@
 				A89AC2FB244D9F2F00DF37B1 /* LaunchViewController.swift */,
 				A89AC2FD244D9F8F00DF37B1 /* LaunchViewModel.swift */,
 				A89AC2FF244D9FC100DF37B1 /* LaunchNavigator.swift */,
-				A89AC305244DCE6D00DF37B1 /* Launch.storyboard */,
+				A89AC305244DCE6D00DF37B1 /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -281,7 +285,9 @@
 		A8CD5B69240801F500F73989 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A89AC301244DB8CE00DF37B1 /* DispatchQueue.swift */,
 				A85EB05D24165EFD008A0022 /* String.swift */,
+				A8DD963C2464831200BF67EA /* KeyboardHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -306,8 +312,8 @@
 				A85EB065241693DD008A0022 /* UIView.swift */,
 				A85EB06724169599008A0022 /* UIButton.swift */,
 				A85EB0692416967C008A0022 /* UILabel.swift */,
-				A89AC301244DB8CE00DF37B1 /* DispatchQueue.swift */,
-				A89AC303244DBD6700DF37B1 /* UIImage.swift */,
+				A89AC303244DBD6700DF37B1 /* UIImageView.swift */,
+				A8DD963A2464558C00BF67EA /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A85EB06424168FD8008A0022 /* Localizable.strings in Resources */,
-				A89AC306244DCE6D00DF37B1 /* Launch.storyboard in Resources */,
+				A89AC306244DCE6D00DF37B1 /* LaunchScreen.storyboard in Resources */,
 				A8CD5B732409463700F73989 /* Welcome.storyboard in Resources */,
 				A8CD5B412407F64B00F73989 /* Assets.xcassets in Resources */,
 				A8CD5B3F2407F64700F73989 /* Main.storyboard in Resources */,
@@ -570,19 +576,21 @@
 				A8CD5B76240949E200F73989 /* LoginViewController.swift in Sources */,
 				A85EB06024167128008A0022 /* UIColor.swift in Sources */,
 				A85EB06A2416967C008A0022 /* UILabel.swift in Sources */,
+				A8DD963B2464558C00BF67EA /* UIImage.swift in Sources */,
 				A89AC300244D9FC100DF37B1 /* LaunchNavigator.swift in Sources */,
 				A85EB05E24165EFD008A0022 /* String.swift in Sources */,
 				A8CD5B71240815EF00F73989 /* AppStoryboard.swift in Sources */,
 				A8CD5B3A2407F64700F73989 /* AppDelegate.swift in Sources */,
 				A89AC2FE244D9F8F00DF37B1 /* LaunchViewModel.swift in Sources */,
-				A89AC304244DBD6700DF37B1 /* UIImage.swift in Sources */,
+				A89AC304244DBD6700DF37B1 /* UIImageView.swift in Sources */,
 				A80549D1240EA7B300B25C42 /* WelcomeNavigator.swift in Sources */,
 				A8CD5B6F2408143800F73989 /* UIViewController.swift in Sources */,
 				A86641BF24191FB200A6A248 /* AppStyle.swift in Sources */,
+				A8DD963D2464831200BF67EA /* KeyboardHelper.swift in Sources */,
 				A86641C3241A7DD500A6A248 /* AppConfiguration.swift in Sources */,
 				A8A104ED24111FB3003697E0 /* LoginRepository.swift in Sources */,
 				A85EB06224168480008A0022 /* Dimension.swift in Sources */,
-				A85EB05C2412958C008A0022 /* CustomTextField.swift in Sources */,
+				A85EB05C2412958C008A0022 /* PrimaryTextField.swift in Sources */,
 				A8CD5B7A24094A3000F73989 /* BaseViewModel.swift in Sources */,
 				A8CD5B7824094A1500F73989 /* BaseViewController.swift in Sources */,
 				A8CD5B6C2408025300F73989 /* Navigator.swift in Sources */,

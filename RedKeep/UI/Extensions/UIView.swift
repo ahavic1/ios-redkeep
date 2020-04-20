@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIView: Styleable {
+    //swiftlint:disable valid_ibinspectable
     @IBInspectable var style: String? {
         get { return nil }
         set {
@@ -33,17 +34,11 @@ private extension UIView {
     func localize() {
         switch self {
         case let label as UILabel:
-            if let text = label.text {
-                label.text = text.localized
-            }
+            if let text = label.text { label.text = text.localized }
         case let button as UIButton:
-            if let text = button.titleLabel?.text {
-                button.setTitle(text.localized, for: .normal)
-            }
+            if let text = button.titleLabel?.text { button.setTitle(text.localized, for: .normal) }
         case let textField as UITextField:
-            if let placeholder = textField.placeholder {
-                textField.placeholder = placeholder.localized
-            }
+            if let placeholder = textField.placeholder { textField.placeholder = placeholder.localized }
         default:
             break
         }
@@ -52,6 +47,9 @@ private extension UIView {
     func setCommonProperties(_ style: Style) {
         if let alpha = style.alpha { self.alpha = alpha }
         if let tintColor = style.tintColor { self.tintColor = tintColor }
+        if let cornerRadius = style.cornerRadius { self.layer.cornerRadius = cornerRadius }
+        if let borderWidth = style.borderWidth { self.layer.borderWidth = borderWidth }
+        if let borderColor = style.borderColor { self.layer.borderColor = borderColor }
     }
 
     func setViewSpecificProperties(_ style: Style) {
@@ -70,13 +68,10 @@ private extension UIView {
     func setProperties(for button: UIButton, style: Style) {
         if let font = style.font { button.titleLabel?.font = font }
         if let textAlignment = style.textAlignment { button.titleLabel?.textAlignment = textAlignment }
-        if let cornerRadius = style.cornerRadius { button.layer.cornerRadius = cornerRadius }
-        if let bgImage = style.backgroundImageNormal { button.setImage(bgImage, for: .normal) }
-        if let bgImage = style.backgroundImageDisabled { button.setImage(bgImage, for: .disabled) }
+        if let bgImage = style.backgroundImageNormal { button.setBackgroundImage(bgImage, for: .normal) }
+        if let bgImage = style.backgroundImageDisabled { button.setBackgroundImage(bgImage, for: .disabled) }
         if let titleColor = style.titleColorNormal { button.setTitleColor(titleColor, for: .normal) }
         if let titleColor = style.titleColorDisabled { button.setTitleColor(titleColor, for: .disabled) }
-        if let borderWidth = style.borderWidth { button.layer.borderWidth = borderWidth }
-        if let borderColor = style.borderColor { button.layer.borderColor = borderColor }
     }
 
     func setProperties(for label: UILabel, style: Style) {

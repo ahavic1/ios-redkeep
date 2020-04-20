@@ -34,7 +34,7 @@ class LaunchNavigator: AppNavigator {
     func createViewController(for destination: LaunchDestination) -> UIViewController {
         switch destination {
         case .launch:
-            let launchVC = LaunchViewController.instantiateFromStoryboard(appStoryboard: .launch)
+            let launchVC = LaunchViewController.instantiateFromStoryboard(appStoryboard: .splash)
             launchVC.viewModel = LaunchViewModel()
             return launchVC
         case .login:

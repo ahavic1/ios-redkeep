@@ -9,9 +9,4 @@
 import UIKit
 
 class LaunchViewController: BaseViewController<LaunchViewModel, LaunchNavigator> {
-    @IBOutlet weak var backgroundImage: UIImageView!
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
 }

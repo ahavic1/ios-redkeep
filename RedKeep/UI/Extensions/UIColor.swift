@@ -33,31 +33,57 @@ extension UIColor {
         )
     }
 
+    static func from(image: String) -> UIColor {
+        UIColor.init(patternImage: UIImage(named: image) ?? UIImage())
+    }
+
+    // - MARK: Base Color Palette
+
     static var primary: UIColor {
-        return UIColor(hexString: "#3F51B5")
+        return UIColor(hexString: "#990000")
     }
 
     static var primaryDark: UIColor {
-        return UIColor(hexString: "#303F9F")
+        return UIColor(hexString: "#890000")
     }
 
     static var primaryLight: UIColor {
-        return UIColor(hexString: "#C5CAE9")
+        return UIColor(hexString: "#EE6161")
     }
 
-    static var primaryAccent: UIColor {
-        return UIColor(hexString: "#607D8B")
+    static var mineshaft: UIColor {
+        return UIColor(hexString: "#383838")
     }
 
-    static var primaryText: UIColor {
-        return UIColor(hexString: "#212121")
+    static var midGray: UIColor {
+        return UIColor(hexString: "#666666")
     }
 
-    static var secondaryText: UIColor {
-        return UIColor(hexString: "#757575")
+    static var aluminum: UIColor {
+        return UIColor(hexString: "#999999")
     }
 
-    static var divider: UIColor {
-        return UIColor(hexString: "#BDBDBD")
+    static var green: UIColor {
+        return UIColor(hexString: "#428500")
     }
+
+    static var moonstoneBlue: UIColor {
+        return UIColor(hexString: "#69A5BE")
+    }
+
+    static var errorRed: UIColor {
+        return UIColor(hexString: "#E20F00")
+    }
+
+    static var white: UIColor {
+        return UIColor(hexString: "#FFFFFF")
+    }
+
+    static var lilyWhite: UIColor {
+        return UIColor(hexString: "#F2F2F2")
+    }
+
+    // - MARK: Feature Colors
+
+    static var divider: UIColor = .midGray
 }
